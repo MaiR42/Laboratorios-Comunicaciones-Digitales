@@ -1,4 +1,4 @@
-close all;
+close all;a
 
 % Parámetros
 f0 = 1;                 % Frecuencia base
