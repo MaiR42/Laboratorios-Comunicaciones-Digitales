@@ -79,9 +79,9 @@ grid on;
 %% Parámetros
 Nbits = 1e2;        % 10^2 bits
 alpha_vals = [0 0.25 0.75 1];
-sps = 15;            % 10: muestras por símbolo (oversampling)
-span = 6;           % duración del filtro en símbolos
-SNR = 40;           % 20 dB (puedes variar)
+sps = 15;            % 15 muestras por símbolo (oversampling)
+span = 6;           % 6 duración del filtro en símbolos
+SNR = 40;           % 40 dB (puedes variar)
 
 % Generar bits NRZ-L
 bits = randi([0 1], 1, Nbits);
