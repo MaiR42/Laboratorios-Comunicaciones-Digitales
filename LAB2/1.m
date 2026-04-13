@@ -1,4 +1,5 @@
 close all;
+% Integrantes: Mair Escobar y Paula Villarroel
 
 % Parámetros
 f0 = 1;                 % Frecuencia base
