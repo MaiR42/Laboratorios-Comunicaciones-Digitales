@@ -1,14 +1,8 @@
 close all;
-% % % Envolvente compleja
-
-% Dado a que La OOK es idéntica a la 
-% modulación binaria unipolar en una señal DSB-SC:
-
-% g(t) = Ac*​m(t)
-
 % Parámetros
 Ac = 1;          % amplitud portadora
 Rb = 1e3;        % tasa de bits [bits/s]
+
 Tb = 1/Rb;       % tiempo de bit
 Fs = 100*Rb;     % frecuencia de muestreo
 
@@ -31,14 +25,21 @@ f = (-Nfft/2:Nfft/2-1)*(Fs/Nfft);
 
 % Gráficas
 figure;
-subplot(2,1,1)
+
+subplot(3,1,1)
+plot(t,m)
+grid on
+title('Señal binaria unipolar')
+xlabel('Tiempo [s]')
+
+subplot(3,1,2)
 plot(t, g, 'LineWidth', 1.2)
 grid on
 xlabel('Tiempo [s]')
 ylabel('g(t)')
 title('Envolvente Compleja de ASK/OOK')
 
-subplot(2,1,2)
+subplot(3,1,3)
 plot(f, abs(G), 'LineWidth', 1.2)
 grid on
 xlabel('Frecuencia [Hz]')
