@@ -1,18 +1,11 @@
 close all;
-% % % Envolvente compleja
-
-% Dado a que La FSK es idéntica a la modulación de una portadora de
-% FM mediante una señal digital binaria:
-
-% g(t) = Ac * exp(j2πΔf∫m(t)dt)
-% Ac: Amplitud de la portadora ; m(t): Señal binaria
-
 % Bits
 bits = [1 0 1 1 0 0 1 0];
 
 % Parametros
 Ac = 1;
 Rb = 1e3;
+
 Tb = 1/Rb;
 Fs = 100*Rb;
 
@@ -46,6 +39,12 @@ subplot(3,1,1)
 plot(t,m)
 grid on
 title('Señal binaria polar')
+xlabel('Tiempo [s]')
+
+subplot(3,1,2)
+plot(t,real(g))
+grid on
+title('Parte real de la envolvente compleja')
 xlabel('Tiempo [s]')
 
 subplot(3,1,3)
