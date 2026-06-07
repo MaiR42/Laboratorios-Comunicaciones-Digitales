@@ -37,7 +37,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '11'
+    value: '7'
   states:
     bus_sink: false
     bus_source: false
@@ -189,18 +189,6 @@ blocks:
     coordinate: [168, 8.0]
     rotation: 0
     state: enabled
-- name: temp
-  id: variable
-  parameters:
-    comment: ''
-    value: print(digital.constellation_8psk().points()) or 1
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [128, 176.0]
-    rotation: 0
-    state: enabled
 - name: v_8psk__points
   id: variable
   parameters:
@@ -284,7 +272,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [464, 984.0]
+    coordinate: [480, 928.0]
     rotation: 0
     state: enabled
 - name: analog_noise_source_x_0_0_0
@@ -343,7 +331,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [80, 808.0]
+    coordinate: [112, 784.0]
     rotation: 0
     state: enabled
 - name: analog_random_source_x_0_0_0_0
@@ -433,7 +421,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [248, 856.0]
+    coordinate: [264, 848.0]
     rotation: 0
     state: enabled
 - name: blocks_pack_k_bits_bb_0_0
@@ -465,7 +453,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1040, 888.0]
+    coordinate: [1016, 928.0]
     rotation: 0
     state: enabled
 - name: blocks_unpack_k_bits_bb_0_0
@@ -521,7 +509,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 840.0]
+    coordinate: [464, 856.0]
     rotation: 0
     state: enabled
 - name: digital_chunks_to_symbols_xx_0_0_0_0
@@ -573,7 +561,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [832, 936.0]
+    coordinate: [808, 928.0]
     rotation: 0
     state: enabled
 - name: digital_constellation_decoder_cb_0_0_0
@@ -625,7 +613,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1152, 680.0]
+    coordinate: [984, 768.0]
     rotation: 0
     state: enabled
 - name: fec_ber_bf_0_0_0
@@ -669,7 +657,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [88, 744.0]
+    coordinate: [120, 728.0]
     rotation: 0
     state: enabled
 - name: note_0_0_0_0
@@ -866,7 +854,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [848, 840.0]
+    coordinate: [816, 840.0]
     rotation: 0
     state: enabled
 - name: qtgui_const_sink_x_0_0_0_0
@@ -1084,7 +1072,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1304, 664.0]
+    coordinate: [1136, 752.0]
     rotation: 0
     state: enabled
 - name: qtgui_number_sink_0_0_0
